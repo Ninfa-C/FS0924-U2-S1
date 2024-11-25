@@ -383,7 +383,7 @@ iframe,section {
   
 
 aside h2{
-    font-size: 2em;
+    font-size: 1.6em;
 }
   aside div{
     display: inline-block;
@@ -392,7 +392,27 @@ aside h2{
   }
 
   /* FOOTER */
-  footer {
-    font-size: 1em;
+
+  footer address{
+    width: 55%;
+    margin: 0 auto;
   }
+}
+
+
+/*media query print*/
+
+@media print {
+    body {
+        font-size: 1.2rem;
+    }
+    header, footer, iframe, section, aside {
+        display: none;
+    }
+    main{
+        box-shadow: none;
+    }
+    table{
+        background: transparent;
+    }
 }
