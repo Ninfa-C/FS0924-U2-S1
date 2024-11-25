@@ -227,27 +227,18 @@ footer a {
 
   .badgeContainer {
     position: relative;
-    display: inline-block; /* Assicura che il contenitore si adatti all'immagine */
+    display: inline-block;
   }
 
   .badgeContainer img {
     box-sizing: border-box;
     padding: 4px;
     border: #00a0c6 5px solid;
+    outline: #a02571 5px solid;
     position: relative;
     z-index: 1;
   }
 
-  .badgeContainer:after {
-    content: "";
-    position: absolute;
-    border: #a02571 7px solid;
-    top: -5px;
-    left: -5px;
-    bottom: 4px;
-    right: -5px;
-    z-index: 0;
-  }
   article h2 {
     font-weight: bold;
     font-size: 1.15em;
@@ -262,13 +253,7 @@ footer a {
   td {
     padding: 0.7em;
   }
-  tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
 
-  tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
 
   tbody tr:last-of-type {
     border-bottom: 3px solid #3f6bca;
@@ -343,14 +328,7 @@ footer a {
     width: 70%;
     border: #00a0c6 3.5px solid;
   }
-
-  .badgeContainer:after {
-    top: -3px;
-    left: -4px;
-    bottom: 3px;
-    right: 22px;
-  }
-
+  
 ul li,
 ol li {
   margin-bottom: 0.6em;
