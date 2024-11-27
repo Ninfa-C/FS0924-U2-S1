@@ -6,13 +6,19 @@ body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
-  padding: 15px;
+  
   background-image: url("../img/sfondo.png");
   background-position: center center;
 }
 * {
   box-sizing: border-box;
 }
+.container{
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
 hr {
   display: none;
 } /* rimuove l'elemento */
@@ -32,6 +38,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0px;
+  width:100%;
 }
 header div img {
   margin-bottom: 20px;
@@ -64,6 +73,7 @@ main {
 }
 badgeContainer {
   display: none;
+  float: inline-start;
 }
 
 section {
@@ -88,6 +98,7 @@ h1 {
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
+
 p,
 address,
 ul,
@@ -223,12 +234,16 @@ footer a {
   h1 {
     font-size: 3.2em;
     line-height: 1.1;
+    position: relative;
   }
 
-  .badgeContainer {
-    position: relative;
-    display: inline-block;
+  h1 img{
+    position: absolute;
+    right: 39%;
+    top: 50px;
   }
+
+
 
   .badgeContainer img {
     box-sizing: border-box;
@@ -291,12 +306,10 @@ footer a {
   }
   header {
     padding: 5px;
-    vertical-align: middle;
   }
   header div {
     display: inline-block;
     width: 70%;
-    vertical-align: middle;
     text-align: left;
     padding: 5px;
   }
@@ -322,6 +335,11 @@ footer a {
 
   h1 {
     font-size: 3.2em;
+  }
+
+  h1 img{
+    right: 39%;
+    top: 50px;
   }
 
   .badgeContainer img {
@@ -392,5 +410,6 @@ aside h2{
     }
     table{
         background: transparent;
+        color: black;
     }
 }
