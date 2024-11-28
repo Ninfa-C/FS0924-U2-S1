@@ -19,16 +19,15 @@ body {
 
 header,
 nav {
-  background-color: #fef7e2;
+  
   display: flex;
   font-weight: 700;
-  align-items: center;
   border-radius: 120px;
 }
 header {
+  background-color: #fef7e2;
   padding: 8% 6%;
   flex-direction: column;
-  height: 55vh;
 }
 ul li:first-child {
   font-size: 2.5em;
@@ -47,7 +46,6 @@ header nav {
 }
 header nav ul {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -59,7 +57,8 @@ header nav ul li {
   list-style: none;
   background-color: #ffdf7e;
   width: 45%;
-  font-size: 1.6em;
+  height: 20%;
+  font-size: 1.4em;
   border-radius: 120px;
   padding: 0.7em;
   display: flex;
