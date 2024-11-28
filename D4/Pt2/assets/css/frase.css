@@ -38,7 +38,7 @@ span {
 span i {
   position: absolute;
   width: max-content;
-  top: -5px;
+  top: -10px;
   color: transparent;
   opacity: 0;
   animation-name: testoAlternato;
@@ -59,7 +59,7 @@ span i:nth-child(3){
   from {
     opacity: 0;
     color: transparent;
-    top: -5px;
+    top: -10px;
   }
   10% {
     color: #6b969d;
@@ -67,8 +67,13 @@ span i:nth-child(3){
     top: 0;
   }
   15% {
+    color: #6b969d;
+    opacity: 10;
+    top: 0;
+  }
+  25% {
     color: transparent;
-    top: 8px;
+    top: 15px;
     opacity: 0;
   }
 }
