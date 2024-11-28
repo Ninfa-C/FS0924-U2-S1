@@ -43,8 +43,8 @@ span i {
   opacity: 0;
   animation-name: testoAlternato;
   animation-duration: 6s;
-  animation-timing-function: linear;
   animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
   animation-delay: 0s;
 }
 
