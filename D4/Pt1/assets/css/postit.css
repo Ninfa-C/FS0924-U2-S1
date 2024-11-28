@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Indie Flower", cursive;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.postIt {
+
+}
