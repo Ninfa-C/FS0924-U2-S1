@@ -5,13 +5,61 @@
 html,body{
     font-family: "Indie Flower", cursive;
 }
+h2{
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+p{
+    font-size: 2em;
+}
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 3em 5em;
+    height: 100vh;
+    background-color: #666666;
 
 }
 .postIt {
+text-align: center;
+width: 22%;
+height: 40%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+box-shadow: 10px 10px 10px -3px rgba(0,0,0,0.4);
+}
 
+.postIt:nth-child(1), .postIt:nth-child(5),.postIt:nth-child(7){
+    background-color: #F9FAC8 ;
+}
+.postIt:nth-child(2), .postIt:nth-child(4),.postIt:nth-child(8){
+    background-color: #C9F9CA ;
+}
+.postIt:nth-child(3), .postIt:nth-child(6) {
+    background-color: #C6C6F1 ;
+}
+
+.postIt:nth-child(1),.postIt:nth-child(5), .postIt:nth-child(7){
+    transform: rotate(-3deg);
+}
+.postIt:nth-child(2), .postIt:nth-child(8){
+    transform: rotate(5deg) translateY(10px);
+}
+.postIt:nth-child(3),.postIt:nth-child(6){
+    transform: rotate(-10deg)  ;
+}
+.postIt:nth-child(4){
+    transform: rotate(15deg) ;
+}
+
+
+.postIt:hover{
+    transform: scale(1.1);
 }
