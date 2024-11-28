@@ -8,24 +8,67 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
-html, body{
-    font-family: "Bree Serif", serif;
+html,
+body {
+  font-family: "Bree Serif", serif;
 }
-main{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #testoAlternato {
-    border: 2px solid black;
-    padding: 1em;
-    line-height: 1.5;
-    text-shadow: 1px 1px 1px rgba(146, 146, 146, 0.8);
-    color: #333;
-    }
+  width: 25%;
+  border: 2px solid black;
+  padding: 1em;
+  line-height: 1.5;
+  text-shadow: 1px 1px 1px rgba(146, 146, 146, 0.8);
+  color: #333;
+  position: relative;
+}
 
 span {
+
+  position: absolute;
+  padding-left: 0.2em; 
+}
+
+span i {
+  position: absolute;
+  width: max-content;
+  top: -5px;
+  color: transparent;
+  opacity: 0;
+  animation-name: testoAlternato;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+span i:nth-child(1){
+    animation-delay:2s;
+}
+span i:nth-child(3){
+    animation-delay: 4s;
+}
+
+@keyframes testoAlternato {
+  from {
+    opacity: 0;
+    color: transparent;
+    top: -5px;
+  }
+  10% {
     color: #6b969d;
+    opacity: 100;
+    top: 0;
+  }
+  15% {
+    color: transparent;
+    top: 8px;
+    opacity: 0;
+  }
 }
